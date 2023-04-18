@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion</title>
+    <link rel="stylesheet" type="text/css"  href="{% static 'plug.css' %}"/>
+</head>
+<body>
+    <h1> FASHION </h1>
+    <p class="mypara">Are you looking for the best fashion plug in Nigeria, just give us green light.</p>
+    {% for fashion in blog %}
+        <div class="myDiv">
+        
+            <h2>{{fashion.title}}</h2>
+            <p>{{fashion.body}}.</p>
+            <img src="/home/static/{{fashion.image}}" height="200"/> <br/>
+            <!--<img src="{% static 'fashion.image' %}" height="200"/> <br/>-->
+            <span> Price:{{fashion.price}}</span> <br/>
+            <span>Color:{{fashion.color}}</span> <br/>
+            <span>Date:{{fashion.date}}</span> <br/>
+            
+        
+        </div>
+    {% endfor %}
+</body>
+</html>

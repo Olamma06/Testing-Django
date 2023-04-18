@@ -1,0 +1,44 @@
+body{
+    background-color:lemonchiffon;
+    background-image: url("backG.png");
+    background-size: inherit;
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+}
+.myDiv{
+    background-color:rgb(208, 107, 248);
+    padding: 5px;
+    margin:5px;
+    border-width:2px 5px 2px 5px;
+    border-radius: 5px;
+    border-collapse: collapse;
+    width: 380px;
+    float:left;
+}
+h1{
+    color:blueviolet;
+    text-align: center;
+    font-size: 80px;
+}
+h2{
+    color: #ffff;
+    padding:20px;
+    text-align: center;
+}
+img{
+    height: 300px;
+    width: 300px;
+}
+.mypara{
+    font-size: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 600;
+    padding: 10px;
+}
+p{
+    text-align: center;
+    color: #ffff;
+}
+
+
+
